@@ -9,6 +9,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="css/smoothness/jquery-ui-1.9.0.custom.css" rel="stylesheet">
+    <script language="javascript" type="text/javascript" src="jquery-1.8.2.js"></script>
+    <script src="js/jquery-ui-1.9.0.custom.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
     <link rel="stylesheet" href="style.css"/>
@@ -129,7 +132,12 @@
                   <a href="https://github.com/itsjonkelley"><i class="fab fa-github fa-3x icon-border" style="color:rgb(0, 0, 0);"> Github</i></a>
                 </div>
                 <div class="col-4">
-                  <a href="./Assets/devResume2020.pdf"><i class="far fa-file fa-3x icon-border" style="color:rgb(99, 97, 97);"> Resume</i></a>
+                  <a href="./Assets/devResume2020.pdf" id="trigger"><i class="far fa-file fa-3x icon-border" style="color:rgb(99, 97, 97);"> Resume</i></a>
+                    <div id="dialog" style="display:none">
+                      <div>
+                        <embed src="/Assets/devResume2020.pdf" type="application/pdf" width="100%" height="100%">
+                    </div>
+                </div> 
                 </div>
     
 
@@ -155,16 +163,16 @@
       <div class="col-5">
         <div class="card-body aboutText rounded">
           <section class="card-body">
-            <h3 class="finalText">
+            <h5 class="finalText">
               Jonathan Kelley
               <br>
-              678-555-5555
+              678-637-7448
               <br>
               jonathankelley87@gmail.com
-            </h3>
-            <h3>
+            </h5>
+            <h6>
               Click the letter below to send me an email directly!
-            </h3>
+            </h6>
             <a href="mailto:jonathankelley87@gmail.com"><i class="far fa-envelope fa-5x icon-border" style="color:rgb(99, 97, 97);"></i></a>
           </section>
         </div>
@@ -203,7 +211,13 @@
 
 
 
-
+    <script language="javascript" type="text/javascript">
+      $(document).ready(function() {
+        $('#trigger').click(function(){
+          $("#dialog").dialog();
+        }); 
+      });                  
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
