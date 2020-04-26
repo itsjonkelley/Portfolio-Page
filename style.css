@@ -1,0 +1,94 @@
+.jumbotron {
+    background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80);
+    background-size: cover;
+    min-height: 350px;
+    margin-bottom: 50px;
+  }
+.display-4 {
+    font-weight: 600;
+}
+.lead {
+    font-weight: 500;
+}
+.jumbotext {
+    padding-left: 170px;
+}
+body {
+    background-image: url('https://images.unsplash.com/photo-1519455953755-af066f52f1a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo-text {
+    border:5px solid darkslategray;
+    padding:1px;
+}
+.navRight {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline-start: 15px;
+    
+}
+.carouselText {
+    color: black;
+    background-color: rgb(206,205,205,.5);
+    padding: 10px 5px 5px 10px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: auto;
+    border: 5px solid darkslategray;
+}
+
+#jkContact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.titleText {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    border: 5px solid darkslategray;
+    background-color: rgb(206,205,205,.6);
+    font-size: large;
+    font-weight: bolder;
+}
+.d-block {
+
+    margin: auto;
+    
+    }
+.carousel-inner {
+    margin-bottom: 50px;
+}
+#jkAbout {
+    margin-bottom: 50px;
+}
+.aboutText {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    border: 5px solid darkslategray;
+    background-color: rgb(206,205,205,.6);
+    
+}
+.meImage {
+    width: 250px;
+    height: auto;
+}
+#jkProject {
+    margin-bottom: 50px;
+}
+.containerAbout {
+    text-align: left;
+}
+.icon-border {
+    margin: auto;
+}
+.finalText {
+    font-weight: bold;
+}
+/* .active {
+    color: black;
+} */
